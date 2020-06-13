@@ -1,0 +1,13 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+  <h1>Title: {{ book.title }}</h1>
+
+  <p><strong>Author:</strong> <a href="{{ author.get_absolute_url }}">{{ book.author }}</a></p> <!-- author detail link not yet defined -->
+  <p><strong>Summary:</strong> {{ book.summary }}</p>
+  <p><strong>ISBN:</strong> {{ book.isbn }}</p> 
+  <p><strong>Price:</strong> {{ book.price }}</p>  
+  <p><strong>Genre:</strong> {{ book.genre }}</p>  
+
+  
+{% endblock %}

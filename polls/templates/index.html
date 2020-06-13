@@ -1,0 +1,16 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+<h1>理工书城</h1>
+
+  <p>Welcome to <em>ZSTU Book City</em></p>
+
+<h2>Dynamic content</h2>
+
+  <p>图书信息一览:</p>
+  <ul>
+    <li><strong>Books:</strong> {{ num_books }}</li>
+    <li><strong>Authors:</strong> {{ num_authors }}</li>
+  </ul>
+
+{% endblock %}
